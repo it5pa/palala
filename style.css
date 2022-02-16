@@ -1,0 +1,119 @@
+body{
+background-color: #bfba8a;
+color: grey;
+}
+
+a {
+	color: gainsboro;
+}
+
+p {
+  margin-right: 700px;
+}
+.tt {
+	color: chartreuse;
+    animation: color-change 2s infinite;
+    animation-duration: 7s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
+    animation-name: color-change;
+}
+@keyframes color-change {
+   0% {
+    color:chartreuse;
+   }
+
+   15% {
+   	color: thistle;
+   }
+
+   25% {
+   	color: whitesmoke;
+   }
+
+   50% {
+   	color: papayawhip;
+   }
+
+   100% {
+     color:grey;
+   }
+
+}
+
+.text {
+	position: fixed;
+}
+
+.oh {
+	color: pink;
+    animation: color-change 5s infinite;
+    animation-duration: 5s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
+    animation-name: color-changee;
+}
+@keyframes color-changee {
+   0% {
+    color:pink;
+   }
+
+   15% {
+   	color: yellow;
+   }
+
+   25% {
+   	color: purple;
+   }
+
+   50% {
+   	color: coral;
+   }
+
+   100% {
+     color:hotpink;
+   }
+
+}
+
+img {
+	width: 80%;
+}
+
+.img {
+	display: flex;
+	flex-direction: column;
+	column-gap: 10px;
+	position: relative;
+	top: 5px;
+	left: 50px;
+	z-index:-1;
+
+}
+
+.img span{
+  display: none;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 10px;
+  background: rgba(255,255,255,.8);
+}
+}
+
+.img:hover span{
+
+}
+
+.one{
+	padding-top: 70px;
+	padding-bottom: 150px;
+}
