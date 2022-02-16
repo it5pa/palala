@@ -95,7 +95,7 @@ img {
 	column-gap: 10px;
 	position: relative;
 	top: 5px;
-	left: 50px;
+  padding: 20px;
 	z-index:-1;
 
 }
@@ -117,4 +117,5 @@ img {
 .one{
 	padding-top: 70px;
 	padding-bottom: 150px;
+  padding-right:20px;
 }
