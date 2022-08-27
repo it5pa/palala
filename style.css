@@ -8,7 +8,7 @@ a {
 }
 
 p {
-  margin-right: 700px;
+  margin-right: 340px;
 }
 
 .tt {
@@ -48,6 +48,7 @@ p {
 
 .text {
 	position: fixed;
+  z-index: 1;
 }
 
 .oh {
@@ -118,7 +119,7 @@ img {
 	padding-top: 70px;
 	padding-bottom: 150px;
   padding-right:20px;
-  z-index:-1;
+  z-index:-20;
 }
 
 .gallery {
