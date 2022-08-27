@@ -91,7 +91,7 @@ img {
 }
 
 .img {
-	display: flex;
+  display: flex;
 	flex-direction: column;
 	column-gap: 10px;
 	position: relative;
@@ -122,6 +122,6 @@ img {
 }
 
 .gallery {
+  display: flex;
   z-index: 20;
-  position: absolute;
 }
