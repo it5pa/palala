@@ -97,7 +97,6 @@ img {
 	position: relative;
 	top: 5px;
   padding: 20px;
-	z-index:-1;
 
 }
 
@@ -119,4 +118,10 @@ img {
 	padding-top: 70px;
 	padding-bottom: 150px;
   padding-right:20px;
+  z-index:-1;
+}
+
+.gallery {
+  z-index: 20;
+  position: absolute;
 }
