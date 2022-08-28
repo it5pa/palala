@@ -7,10 +7,6 @@ a {
 	color: gainsboro;
 }
 
-p {
-  margin-right: 340px;
-}
-
 .tt {
 	color: chartreuse;
     animation: color-change 2s infinite;
@@ -50,7 +46,8 @@ p {
 	position: fixed;
   z-index: 1;
   margin-left: 5px;
-  font-size: 1.07em;s
+  font-size: 1em;
+  line-height: 1.23em;
 }
 
 .oh {
