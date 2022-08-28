@@ -5,6 +5,7 @@ color: grey;
 
 a {
 	color: gainsboro;
+  text-decoration: none;
 }
 
 .tt {
