@@ -44,17 +44,17 @@ a {
 }
 
 .text {
-	position: fixed;
+  position: fixed;
   z-index: 1;
   margin-left: 5px;
-  font-size: 1em;
-  line-height: 1.23em;
+  font-size: 0.93em;
+  line-height: 1.2em;
 }
 
 .oh {
 	color: pink;
-    animation: color-change 5s infinite;
-    animation-duration: 5s;
+    animation: color-change 3s infinite;
+    animation-duration: 8s;
     animation-timing-function: ease;
     animation-delay: 0s;
     animation-iteration-count: infinite;
@@ -82,6 +82,41 @@ a {
 
    100% {
      color:hotpink;
+   }
+
+}
+
+.aa {
+  color: pink;
+    animation: color-change 5s infinite;
+    animation-duration: 5s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
+    animation-name: color-changee;
+}
+@keyframes color-changee {
+   0% {
+    color:mediumpurple;
+   }
+
+   15% {
+    color: khaki;
+   }
+
+   25% {
+    color: springgreen;
+   }
+
+   50% {
+    color: sandybrown;
+   }
+
+   100% {
+     color:honeydew;
    }
 
 }
@@ -119,11 +154,101 @@ img {
 	padding-bottom: 20em;
   padding-right:20px;
   z-index:-20;
-  width: 116%;
+  width: 98%
 }
 
 .gallery {
   z-index: 20;
   width: 82%;
-  margin-bottom: 1em;
+  margin-bottom: 1.3em;
+}
+
+.slider {
+    width: 62%;
+    text-align: center;
+    z-index: 20;
+}
+
+.slider .photos {
+    position: relative;
+    height: 433px;
+}
+
+.slider .photos img {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    opacity: 0;
+    padding-bottom: 2em;
+/*    transition: opacity 1s;*/
+}
+
+.slider .photos img.shown {
+    opacity: 1;
+}
+
+.prev:before,
+.next:before {
+    color: transparent;
+    font-size: 30em;
+    position: absolute;
+    top: -8%;
+    cursor: pointer;
+}
+
+.prev:before {
+  content: '.';
+  left: 0;
+}
+
+.next:before {
+  content: '.';
+  right: 0;
+}
+
+
+@media only screen and (max-width: 600px) {
+  body {
+  max-height: 1400px;
+  }
+
+ .text {
+  font-size: 1.1em;
+  position: absolute;
+  max-width: 20em;
+  top: 14em;
+  padding-bottom: 2em;
+}
+
+.img {
+    display: flex;
+    flex-direction: column;
+    /* column-gap: 10px; */
+    position: relative;
+    /* top: 5px; */
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.one{
+  display: none;
+/*  position: relative;
+  width: 232%;
+  transform: rotate(-90deg);
+  padding-bottom: 30em;*/
+}
+
+.slider {
+    width: 96%;
+    margin-left: 0;
+    position: fixed;
+    z-index: 20;
+    padding-left: 0;
+}
+
+/*.gallery {
+  width: 135%;
+  max-width: 27em;
+}*/
+
 }
