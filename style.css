@@ -49,6 +49,8 @@ p {
 .text {
 	position: fixed;
   z-index: 1;
+  margin-left: 5px;
+  font-size: 1.07em;
 }
 
 .oh {
@@ -98,7 +100,6 @@ img {
 	position: relative;
 	top: 5px;
   padding: 20px;
-
 }
 
 .img span{
