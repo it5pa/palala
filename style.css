@@ -216,7 +216,7 @@ img {
   font-size: 1.1em;
   position: absolute;
   max-width: 20em;
-  top: 15em;
+  top: 16em;
   padding-bottom: 2em;
 }
 
@@ -249,6 +249,11 @@ img {
 .slider .photos {
     height: 264px;
 }
+
+.prev:before, .next:before {
+  font-size: 17em;
+}
+
 /*.gallery {
   width: 135%;
   max-width: 27em;
