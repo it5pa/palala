@@ -47,4 +47,14 @@ function Slider(obj) {
     // To add next and prev functions when clicking the corresponding buttons
     $(slider.btnPrev).on('click', function(){ slider.prev();});
     $(slider.btnNext).on('click', function(){ slider.next();});
+
+    document.addEventListener("keydown", event => {
+  //every time a key is pushed, this function will fire
+  event.code === "ArrowLeft" && slider.prev();
+  event.code === "ArrowRight" && slider.next();
+});
+
+$("#right-arrow").click(function() { slider.next();});
+$("#left-arrow").click(function() {slider.prev();});
+
 };
