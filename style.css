@@ -164,7 +164,7 @@ img {
 }
 
 .slider {
-    width: 62%;
+    width: 50%;
     text-align: center;
     z-index: 20;
 }
@@ -247,6 +247,8 @@ img {
 }
 
 .slider .photos {
+  display: flex;
+justify-content: center;
     height: 264px;
 }
 
