@@ -213,12 +213,12 @@ img {
   }
 
  .text {
-  font-size: 1.1em;
-  position: absolute;
-  max-width: 0em;
-  top: 17em;
-  padding-bottom: 2em;
-}
+    font-size: 1.12em;
+    position: absolute;
+    max-width: 22em;
+    top: 0.09em;
+    padding-bottom: 2em;
+  }
 
 .img {
     display: flex;
@@ -242,7 +242,7 @@ img {
     width: 96%;
     margin-left: 0;
     position: fixed;
-    top: 8em;
+    top: 10.9em;
     z-index: 20;
     padding-left: 0;
 }
