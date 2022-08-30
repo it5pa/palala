@@ -217,7 +217,7 @@ img {
     font-size: 1.12em;
     position: absolute;
     max-width: 22em;
-    top: 0.09em;
+    top: 17em;
     padding-bottom: 2em;
   }
 
@@ -243,7 +243,7 @@ img {
     width: 96%;
     margin-left: 0;
     position: fixed;
-    top: 10.9em;
+    top: 1em;
     z-index: 20;
     padding-left: 0;
 }
