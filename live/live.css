@@ -1,0 +1,33 @@
+body{
+font-family: 'Comic Sans', sans-serif;
+font-size: 1em;
+text-align: center;
+margin: 3em 12em 0 12em;
+background-color: darkolivegreen;
+}
+
+.day1 {
+	margin: 3em 0em;
+    padding: 1em 8em;
+    border-radius: 25px;
+    /* width: 45em; */
+    /* height: 26em; */
+    place-content: center;
+    /*background: conic-gradient(from -90deg at bottom,grey 90deg,red) 14%/68px 10%;*/
+/*    background: ;*/
+    color: lightgoldenrodyellow;
+/*    mix-blend-mode: luminosity;*/
+}
+
+.day2 {
+padding: 1em 8em;
+color: azure;
+}
+
+p {
+/*	mix-blend-mode: difference;*/
+}
+
+img {
+	width: 500px;
+}
