@@ -2,12 +2,12 @@ body{
 font-family: 'Comic Sans', sans-serif;
 font-size: 1em;
 text-align: center;
-margin: 3em 12em 0 12em;
+margin: 3em 0 0 0;
 background-color: darkolivegreen;
 }
 
 .day1 {
-	margin: 3em 0em;
+	margin: 3em 12em;
     padding: 1em 8em;
     border-radius: 25px;
     /* width: 45em; */
@@ -20,8 +20,9 @@ background-color: darkolivegreen;
 }
 
 .day2 {
-padding: 1em 8em;
-color: azure;
+    margin: 3em 12em;
+    padding: 1em 8em;
+    color: azure;
 }
 
 p {
@@ -30,4 +31,12 @@ p {
 
 img {
 	width: 500px;
+}
+
+.phrase {
+color: chartreuse;
+width: 100%;
+direction:  left;
+margin: 3em 0em 0em 0em;
+font-size: 1em;
 }
