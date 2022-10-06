@@ -6,9 +6,11 @@ margin: 3em 0 0 0;
 background-color: darkolivegreen;
 }
 
-.day1 {
-	margin: 3em 12em;
+div {
+    margin: 3em 12em;
     padding: 1em 8em;
+}
+.day1 {
     border-radius: 25px;
     /* width: 45em; */
     /* height: 26em; */
@@ -20,8 +22,6 @@ background-color: darkolivegreen;
 }
 
 .day2 {
-    margin: 3em 12em;
-    padding: 1em 8em;
     color: azure;
 }
 
@@ -39,4 +39,26 @@ width: 100%;
 direction:  left;
 margin: 3em 0em 0em 0em;
 font-size: 1em;
+}
+
+@media screen and (max-width: 600px) {
+    body {
+   position: absolute;
+    width: 90%;
+    top: 5%;
+    /* bottom: 5%; */
+    left: 23%;
+    margin-top: -49px;
+    margin-left: -66px;
+    margin-bottom: 10px;
+    width: 90%;
+    height: 100px;
+    }
+
+    img {
+        width: 300px;
+    }
+    div {
+        margin: 2em 0em;
+        padding: 7px;
 }
