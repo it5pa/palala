@@ -8,6 +8,35 @@
 </head>
 <body>
 	<marquee class="phrase" scrollamount="8">phrase of the day: </marquee>
+	<day class="day8">
+		<p></p>
+		<p></p>
+		<p>today is a button</p>
+		<audio id="testAudio" hidden="" src="https://s3.radio.co/s325854522/listen" type="audio/mpeg">
+      </audio>
+      <button id="playAudio" class="is-playing">Pause</button>
+      <script type="text/javascript">
+      document.getElementById("playAudio").addEventListener("click", function(){
+          var audio = document.getElementById('testAudio');
+      if(this.className == 'is-playing'){
+          this.className = "";
+          this.innerHTML = "Play"
+          audio.pause();
+      }else{
+          this.className = "is-playing";
+          this.innerHTML = "Pause";
+          audio.play();
+      }
+
+      });
+      </script>
+		<p></p>
+		<p></p>
+		<p></p>
+		<p></p>
+		<p></p>
+		<p></p>
+	</day>
 	<div class="day7">
 		<p>dear diary, i'm happy there are no time stamps listed here. i could easily skip a day with no noting down of what is happenng, but that wouldn't feel right. i find this ritual of noting and reflecting helpful, but feel less and less like being in front of the computer</p>
 		<p>we had a productive day of cleaning and shopping for the next week of putting something into our bellies. i like that a big part of being here is living here. i am also losing my words a bit, tuning into all that Italian going on around me. i feel like drifting a lot more into drawing than wording</p>
