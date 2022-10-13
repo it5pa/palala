@@ -46,8 +46,13 @@ div {
 }
 
 .day8 {
+    color: chocolate;
+}
+
+.day9 {
     color: powderblue;
 }
+
 p {
 /*	mix-blend-mode: difference;*/
 }
