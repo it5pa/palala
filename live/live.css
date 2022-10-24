@@ -6,8 +6,8 @@
 
   @font-face {
     font-family: 'Sligoil-Micro';
-    src: url('Sligoil-Micro.woff2') format('woff2'), /* Super Modern Browsers */
-         url('Sligoil-Micro.woff') format('woff'); /* Pretty Modern Browsers */
+    src: url('./fonts/Sligoil-Micro.woff2') format('woff2'), /* Super Modern Browsers */
+         url('./fonts/Sligoil-Micro.woff') format('woff'); /* Pretty Modern Browsers */
   }
 
 body{
