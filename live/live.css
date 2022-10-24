@@ -1,5 +1,17 @@
+@font-face {
+    font-family: 'AMDAL-Regular';
+    src: url('AMDAL-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('AMDAL-Regular.woff') format('woff'); /* Pretty Modern Browsers */
+  }
+
+  @font-face {
+    font-family: 'Sligoil-Micro';
+    src: url('Sligoil-Micro.woff2') format('woff2'), /* Super Modern Browsers */
+         url('Sligoil-Micro.woff') format('woff'); /* Pretty Modern Browsers */
+  }
+
 body{
-font-family: 'Comic Sans', sans-serif;
+font-family: 'Sligoil-Micro', sans-serif;
 font-size: 1em;
 text-align: center;
 margin: 3em 0 0 0;
@@ -86,6 +98,22 @@ div {
 }
 p {
 /*	mix-blend-mode: difference;*/
+}
+
+.day17 {
+    color: rgb(158, 158, 158);
+}
+
+.day18 {
+    color: rgb(243, 243, 70);
+}
+
+.day19 {
+    color: rgb(236, 146, 62);
+}
+
+.day20 {
+    color: rgb(140, 215, 240);
 }
 
 img {
