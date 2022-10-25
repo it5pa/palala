@@ -11,7 +11,7 @@
   }
 
 body{
-font-family: 'Sligoil-Micro', sans-serif;
+font-family: 'AMDAL-Regular', sans-serif;
 font-size: 1em;
 line-height: 1.2;
 text-align: center;
@@ -112,6 +112,10 @@ div {
 
 .day20 {
     color: rgb(140, 215, 240);
+}
+
+.day21 {
+    color: lightpink;
 }
 
 img {
