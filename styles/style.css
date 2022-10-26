@@ -6,7 +6,7 @@
 
 body{
 font-family: 'AMDAL-Regular', sans-serif;
-background-color: #bfba8a;
+background-color: #29281c;
 color: grey;
 margin-left: 20px;
 margin-top: 23px;
@@ -202,12 +202,14 @@ a {
   content: '.';
   left: 696;
   cursor: w-resize;
+  width:300px;
 }
 
 .next:before {
   content: '.';
   right: 0;
   cursor: e-resize;
+  width: 300px;
 }
 
 
