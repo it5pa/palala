@@ -12,6 +12,16 @@ margin-left: 20px;
 margin-top: 23px;
 }
 
+::-moz-selection { /* Code for Firefox */
+  color: rgb(0, 0, 0);
+  background: rgb(255, 255, 255);
+}
+
+::selection {
+  color: rgb(0, 0, 0);
+  background: rgb(255, 255, 255);
+} 
+
 a {
 	color: gainsboro;
   text-decoration: none;
@@ -261,6 +271,5 @@ justify-content: center;
 
 .prev:before, .next:before {
   font-size: 17em;
-}
-
+} 
 }
