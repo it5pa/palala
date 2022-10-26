@@ -229,11 +229,11 @@ a {
   }
 
 .text {
-    font-family: 'AMDAL-Regular', sans-serif;
-    width: 900px;
-    position: fixed;
-    font-size: 0.97em;
-    line-height: 1.2em;
+  font-family: 'AMDAL-Regular', sans-serif;
+  width: 320;
+  position: absolute;
+  font-size: 1.2em;
+  line-height: 1.2em;
   }
 
 .img {
