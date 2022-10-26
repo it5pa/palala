@@ -208,18 +208,21 @@ a {
     /* cursor: pointer; */
 }
 
+.prev:before, .next:before {
+  font-size: 17em;
+  width:100px;
+} 
+
 .prev:before {
   content: '.';
-  left: 696;
+  left: 5px;
   cursor: w-resize;
-  width:300px;
 }
 
 .next:before {
   content: '.';
   right: 0;
   cursor: e-resize;
-  width: 300px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -244,18 +247,6 @@ a {
     width: 93%;
     position: fixed;
     padding-bottom: 2em;
-  }
-  
-  .prev:before, .next:before {
-    font-size: 17em;
-  } 
-
-  /* .info {
-    display: none;
-  } */
-
-  .prev:before {
-    left: 5px;
   }
 
 } 
