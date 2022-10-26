@@ -8,6 +8,8 @@ body{
 font-family: 'AMDAL-Regular', sans-serif;
 background-color: #bfba8a;
 color: grey;
+margin-left: 20px;
+margin-top: 23px;
 }
 
 a {
@@ -48,15 +50,6 @@ a {
      color:grey;
    }
 
-}
-
-.text {
-  position: fixed;
-  z-index: 1;
-  top: 0em;
-  margin-left: 5px;
-  font-size: 0.93em;
-  line-height: 1.2em;
 }
 
 .oh {
@@ -129,7 +122,7 @@ a {
 
 }
 
-img {
+/* img {
 	width: 80%;
   margin-bottom: 20px;
 }
@@ -141,7 +134,7 @@ img {
 	position: relative;
 	top: 5px;
   padding-left: 5px;
-}
+} */
 
 .img span{
   display: none;
@@ -179,14 +172,15 @@ img {
 
 .slider .photos {
     position: relative;
-    height: 433px;
+    /* height: 433px; */
 }
 
 .slider .photos img {
-    width: 100%;
-    position: absolute;
-    left: 0;
-    opacity: 0;
+   top: 33px;
+   opacity: 0;
+    left: 696px;
+    width: 50%;
+    position: fixed;
     padding-bottom: 2em;
 /*    transition: opacity 1s;*/
 }
@@ -199,19 +193,21 @@ img {
 .next:before {
     color: transparent;
     font-size: 30em;
-    position: absolute;
-    top: -8%;
-    cursor: pointer;
+    position: fixed;
+    top: 2%;
+    /* cursor: pointer; */
 }
 
 .prev:before {
   content: '.';
-  left: 0;
+  left: 696;
+  cursor: w-resize;
 }
 
 .next:before {
   content: '.';
   right: 0;
+  cursor: e-resize;
 }
 
 
@@ -220,13 +216,12 @@ img {
   max-height: 1400px;
   }
 
- .text {
+.text {
     font-family: 'AMDAL-Regular', sans-serif;
-    font-size: 1.12em;
-    position: absolute;
-    max-width: 22em;
-    top: 17em;
-    padding-bottom: 2em;
+    width: 900px;
+    position: fixed;
+    font-size: 0.97em;
+    line-height: 1.2em;
   }
 
 .img {
