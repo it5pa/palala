@@ -204,31 +204,50 @@ a {
     color: transparent;
     font-size: 30em;
     position: fixed;
-    top: 2%;
-    /* cursor: pointer; */
+    top: 10%;
 }
 
 .prev:before, .next:before {
   font-size: 17em;
-  width:100px;
+  width: 345px;
+  height: 450px;
 } 
 
 .prev:before {
   content: '.';
-  left: 5px;
+  left: 700px;
   cursor: w-resize;
 }
 
 .next:before {
   content: '.';
-  right: 0;
+  right: 43px;
   cursor: e-resize;
 }
+
+/* mobile view */
 
 @media only screen and (max-width: 600px) {
   
   body {
   max-height: 1400px;
+  }
+
+.prev:before, .next:before {
+    width: 100px;
+    top: 2%;
+  }
+
+.prev:before {
+    content: '.';
+    left: 5px;
+    cursor: w-resize;
+  }
+
+  .next:before {
+    content: '.';
+    right: 5px;
+    cursor: w-resize;
   }
 
 .text {
