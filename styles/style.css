@@ -1,4 +1,11 @@
+@font-face {
+  font-family: 'AMDAL-Regular';
+  src: url('AMDAL-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('AMDAL-Regular.woff') format('woff'); /* Pretty Modern Browsers */
+}
+
 body{
+font-family: 'AMDAL-Regular';
 background-color: #bfba8a;
 color: grey;
 }
