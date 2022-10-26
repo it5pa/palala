@@ -186,10 +186,10 @@ a {
 }
 
 .slider .photos img {
-   top: 33px;
+    top: 100px;
    opacity: 0;
-    left: 696px;
-    width: 50%;
+   left: 780px;
+   width: 37%;
     position: fixed;
     padding-bottom: 2em;
 /*    transition: opacity 1s;*/
