@@ -250,4 +250,12 @@ a {
     font-size: 17em;
   } 
 
+  /* .info {
+    display: none;
+  } */
+
+  .prev:before {
+    left: 5px;
+  }
+
 } 
