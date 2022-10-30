@@ -234,7 +234,8 @@ a {
   }
 
 .prev:before, .next:before {
-    width: 100px;
+    width: 170px;
+    height: 290px;
     top: 2%;
   }
 
