@@ -146,18 +146,13 @@ a {
   padding-left: 5px;
 } */
 
-.img span{
+.img span {
   display: none;
   position: absolute;
   bottom: 0;
   width: 100%;
   padding: 10px;
   background: rgba(255,255,255,.8);
-}
-}
-
-.img:hover span{
-
 }
 
 .one{
@@ -185,6 +180,18 @@ a {
     /* height: 433px; */
 }
 
+/* .caption {
+  display: none;
+}
+
+.text:hover + .caption {
+  display: block;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  color: white;
+} */
+
 .slider .photos img {
     top: 100px;
    opacity: 0;
@@ -199,8 +206,7 @@ a {
     opacity: 1;
 }
 
-.prev:before,
-.next:before {
+.prev:before, .next:before {
     color: transparent;
     font-size: 30em;
     position: fixed;
