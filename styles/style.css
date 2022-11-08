@@ -269,8 +269,8 @@ a {
   .slider .photos img {
     top: 26px;
     opacity: 0;
-    left: 15px;
-    width: 93%;
+    left: 19px;
+    width: 90%;
     position: fixed;
     padding-bottom: 2em;
   }
