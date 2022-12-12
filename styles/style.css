@@ -1,18 +1,19 @@
 @font-face {
   font-family: 'AMDAL-Regular';
-  src: url('AMDAL-Regular.woff2') format('woff2'), /* Super Modern Browsers */
-       url('AMDAL-Regular.woff') format('woff'); /* Pretty Modern Browsers */
+  src: url('AMDAL-Regular.woff2') format('woff2'),
+    /* Super Modern Browsers */ url('AMDAL-Regular.woff') format('woff'); /* Pretty Modern Browsers */
 }
 
-body{
-font-family: 'AMDAL-Regular', sans-serif;
-background-color: #29281c;
-color: grey;
-margin-left: 20px;
-margin-top: 23px;
+body {
+  font-family: 'AMDAL-Regular', sans-serif;
+  background-color: #29281c;
+  color: grey;
+  margin-left: 20px;
+  margin-top: 23px;
 }
 
-::-moz-selection { /* Code for Firefox */
+::-moz-selection {
+  /* Code for Firefox */
   color: rgb(0, 0, 0);
   background: rgb(255, 255, 255);
 }
@@ -20,116 +21,113 @@ margin-top: 23px;
 ::selection {
   color: rgb(0, 0, 0);
   background: rgb(255, 255, 255);
-} 
+}
 
 a {
-	color: gainsboro;
+  color: gainsboro;
   text-decoration: none;
 }
 
 .tt {
-	color: chartreuse;
-    animation: color-change 2s infinite;
-    animation-duration: 7s;
-    animation-timing-function: ease;
-    animation-delay: 0s;
-    animation-iteration-count: infinite;
-    animation-direction: normal;
-    animation-fill-mode: none;
-    animation-play-state: running;
-    animation-name: color-change;
+  color: chartreuse;
+  animation: color-change 2s infinite;
+  animation-duration: 7s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
+  animation-name: color-change;
 }
 @keyframes color-change {
-   0% {
-    color:chartreuse;
-   }
+  0% {
+    color: chartreuse;
+  }
 
-   15% {
-   	color: thistle;
-   }
+  15% {
+    color: thistle;
+  }
 
-   25% {
-   	color: whitesmoke;
-   }
+  25% {
+    color: whitesmoke;
+  }
 
-   50% {
-   	color: papayawhip;
-   }
+  50% {
+    color: papayawhip;
+  }
 
-   100% {
-     color:grey;
-   }
-
+  100% {
+    color: grey;
+  }
 }
 
 .oh {
-	color: pink;
-    animation: color-change 3s infinite;
-    animation-duration: 8s;
-    animation-timing-function: ease;
-    animation-delay: 0s;
-    animation-iteration-count: infinite;
-    animation-direction: normal;
-    animation-fill-mode: none;
-    animation-play-state: running;
-    animation-name: color-changee;
+  color: pink;
+  animation: color-change 3s infinite;
+  animation-duration: 8s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
+  animation-name: color-changee;
 }
 @keyframes color-changee {
-   0% {
-    color:pink;
-   }
+  0% {
+    color: pink;
+  }
 
-   15% {
-   	color: yellow;
-   }
+  15% {
+    color: yellow;
+  }
 
-   25% {
-   	color: purple;
-   }
+  25% {
+    color: purple;
+  }
 
-   50% {
-   	color: coral;
-   }
+  50% {
+    color: coral;
+  }
 
-   100% {
-     color:hotpink;
-   }
-
+  100% {
+    color: hotpink;
+  }
 }
 
 .aa {
   color: pink;
-    animation: color-change 5s infinite;
-    animation-duration: 5s;
-    animation-timing-function: ease;
-    animation-delay: 0s;
-    animation-iteration-count: infinite;
-    animation-direction: normal;
-    animation-fill-mode: none;
-    animation-play-state: running;
-    animation-name: color-changee;
+  animation: color-change 5s infinite;
+  animation-duration: 5s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
+  animation-name: color-changee;
 }
 @keyframes color-changee {
-   0% {
-    color:mediumpurple;
-   }
+  0% {
+    color: mediumpurple;
+  }
 
-   15% {
+  15% {
     color: khaki;
-   }
+  }
 
-   25% {
+  25% {
     color: springgreen;
-   }
+  }
 
-   50% {
+  50% {
     color: sandybrown;
-   }
+  }
 
-   100% {
-     color:honeydew;
-   }
-
+  100% {
+    color: honeydew;
+  }
 }
 
 /* img {
@@ -147,37 +145,42 @@ a {
 } */
 
 .img span {
-  display: none;
+  /* display: flex; */
   position: absolute;
   bottom: 0;
   width: 100%;
   padding: 10px;
-  background: rgba(255,255,255,.8);
+  background: rgba(255, 255, 255, 0.8);
 }
 
-.one{
-	padding-top: 70px;
-	padding-bottom: 20em;
-  padding-right:20px;
-  z-index:-20;
-  width: 98%
+.one {
+  padding-top: 70px;
+  padding-bottom: 20em;
+  padding-right: 20px;
+  z-index: -20;
+  width: 98%;
 }
 
 .gallery {
   z-index: 20;
   width: 82%;
   margin-bottom: 1.3em;
+  caret-color: blueviolet;
 }
 
 .slider {
-    width: 50%;
-    text-align: center;
-    z-index: 20;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  z-index: 20;
 }
 
 .slider .photos {
-    position: relative;
-    /* height: 433px; */
+  position: relative;
+  /* height: 433px; */
 }
 
 /* .caption {
@@ -193,31 +196,34 @@ a {
 } */
 
 .slider .photos img {
-    top: 120px;
-   opacity: 0;
-   left: 780px;
-   width: 37%;
-    position: fixed;
-    padding-bottom: 2em;
-/*    transition: opacity 1s;*/
+  top: 133px;
+  opacity: 0;
+  left: 728px;
+  max-height: 500px;
+  max-width: 672px;
+  /* width: 37%; */
+  position: fixed;
+  padding-bottom: 2em;
 }
 
 .slider .photos img.shown {
-    opacity: 1;
+  opacity: 1;
 }
 
-.prev:before, .next:before {
-    color: transparent;
-    font-size: 30em;
-    position: fixed;
-    top: 10%;
+.prev:before,
+.next:before {
+  color: transparent;
+  font-size: 30em;
+  position: fixed;
+  top: 10%;
 }
 
-.prev:before, .next:before {
+.prev:before,
+.next:before {
   font-size: 17em;
   width: 345px;
   height: 450px;
-} 
+}
 
 .prev:before {
   content: '.';
@@ -236,16 +242,17 @@ a {
 @media only screen and (max-width: 600px) {
   
   body {
-  max-height: 1400px;
+    max-height: 1400px;
   }
 
-.prev:before, .next:before {
+  .prev:before,
+  .next:before {
     width: 170px;
     height: 290px;
     top: 2%;
   }
 
-.prev:before {
+  .prev:before {
     content: '.';
     left: 5px;
     cursor: w-resize;
@@ -257,13 +264,13 @@ a {
     cursor: w-resize;
   }
 
-.text {
-  ont-family: 'AMDAL-Regular', sans-serif;
-  width: 320;
-  position: absolute;
-  font-size: 1.2em;
-  line-height: 1.2em;
-  top: 321px;
+  .text {
+    ont-family: 'AMDAL-Regular', sans-serif;
+    width: 320;
+    position: absolute;
+    font-size: 1.2em;
+    line-height: 1.2em;
+    top: 321px;
   }
 
   .slider .photos img {
@@ -274,5 +281,4 @@ a {
     position: fixed;
     padding-bottom: 2em;
   }
-
-} 
+}
