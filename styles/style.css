@@ -265,8 +265,8 @@ a {
   }
 
   .text {
-    ont-family: 'AMDAL-Regular', sans-serif;
-    width: 320;
+    /* font-family: 'AMDAL-Regular', sans-serif; */
+    width: 350;
     position: absolute;
     font-size: 1.2em;
     line-height: 1.2em;
