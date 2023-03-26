@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'AMDAL-Regular';
-  src: url('AMDAL-Regular.woff2') format('woff2'),
-    /* Super Modern Browsers */ url('AMDAL-Regular.woff') format('woff'); /* Pretty Modern Browsers */
+  src: url('fonts/AMDAL-Regular.woff2') format('woff2'),
+    url('fonts/AMDAL-Regular.woff') format('woff');
 }
 
 body {
@@ -9,10 +9,73 @@ body {
   background-color: #29281c;
   color: grey;
   margin-left: 20px;
-  margin-top: 23px;
-  position: fixed;
+  margin-top: 15px;
+  overflow: hidden;
 }
 
+/* listen */
+.listen {
+  position: fixed;
+  right: 3%;
+  margin-top: 15px;
+  text-align: right;
+  z-index: 10000;
+  color: rgb(236, 130, 91);
+  cursor: pointer;
+}
+
+.mixes {
+  position: relative;
+  display: none;
+  color: dimgray;
+  padding-left: 5px;
+}
+
+.mixes a {
+  color: mediumpurple;
+}
+
+.mixes a:hover {
+  color: rgb(236, 130, 91);
+}
+
+/* additional */
+.purple {
+  color: mediumpurple;
+}
+
+.no-break {
+  white-space: nowrap;
+}
+
+.mobile-info {
+  display: none;
+}
+
+/* content */
+.content {
+  display: flex;
+}
+
+.content .text {
+  width: 50%;
+}
+
+.content .img {
+  width: 49%;
+  /* z-index: -920; */
+}
+
+a {
+  color: gainsboro;
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(236, 130, 91);
+}
+
+/* text selection */
 ::-moz-selection {
   /* Code for Firefox */
   color: rgb(0, 0, 0);
@@ -23,31 +86,68 @@ body {
   color: rgb(0, 0, 0);
   background: rgb(255, 255, 255);
 }
+/* slider */
 
-.listen {
-  position: fixed;
-  right: 3%;
-  text-align: right;
-  z-index: 10000;
-  color: rgb(236, 130, 91);
+.slides {
+  display: flex;
+  justify-content: center;
+}
+
+.slides img {
+  width: auto;
+  height: 100%;
+  position: absolute;
+  opacity: 0;
+  z-index: 999;
+  /* cursor: help; */
+}
+
+.slider-1 {
+  position: relative;
+  margin-top: 134px;
+  width: 100%;
+  height: 100vh;
+  max-height: 60vh;
+}
+
+.shown {
+  opacity: 1 !important;
+}
+
+.caption {
+  position: relative;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-top: 28vh;
+  opacity: 0;
+  /* transition: opacity 0.5s; */
+}
+
+/* prev next buttons */
+.buttons {
+  position: relative;
+  z-index: 900;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30vh;
+  color: dimgrey;
+  font-size: 1em;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   cursor: pointer;
 }
 
-.mixes{
-  position: relative;
-  display: none;
-  color: dimgray;
+.prev:hover,
+.next:hover {
+  font-style: italic;
 }
 
-.mixes a{
-  color: mediumpurple;
-}
-
-a {
-  color: gainsboro;
-  text-decoration: none;
-}
-
+/* link animations */
 .tracks {
   color: chartreuse;
   animation: color-change 2s infinite;
@@ -150,105 +250,6 @@ a {
   }
 }
 
-/* img {
-	width: 80%;
-  margin-bottom: 20px;
-}
-
-.img {
-  display: flex;
-	flex-direction: column;
-	column-gap: 10px;
-	position: relative;
-	top: 5px;
-  padding-left: 5px;
-} */
-
-.img span {
-  /* display: flex; */
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  padding: 10px;
-  background: rgba(255, 255, 255, 0.8);
-}
-
-.one {
-  padding-top: 70px;
-  padding-bottom: 20em;
-  padding-right: 20px;
-  z-index: -20;
-  width: 98%;
-}
-
-.gallery {
-  z-index: 20;
-  width: 82%;
-  margin-bottom: 1.3em;
-  caret-color: blueviolet;
-}
-
-.slider {
-  width: 100%;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  z-index: 20;
-}
-
-.slider .photos {
-  position: relative;
-  /* height: 433px; */
-}
-
-/* .caption {
-  display: none;
-}
-
-.text:hover + .caption {
-  display: block;
-  position: fixed;
-  top: 20px;
-  right: 20px;
-  color: white;
-} */
-
-.slider .photos img {
-  top: 145px;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  opacity: 0;
-  left: 728px;
-  max-height: 500px;
-  max-width: 672px;
-  /* width: 37%; */
-  position: fixed;
-  padding-bottom: 2em;
-}
-
-.slider .photos img.shown {
-  opacity: 1;
-}
-
-.next {
-  right: 3%;
-}
-
-.prev {
-  right: 48%;
-}
-
-.prev,
-.next {
-  color: dimgrey;
-  position: fixed;
-  top: 92%;
-  font-size: 1em;
-  cursor: pointer;
-}
 
 .prev:before,
 .next:before {
@@ -256,84 +257,82 @@ a {
   font-size: 40em;
   position: fixed;
   top: 10%;
-}
-
-.prev:before,
-.next:before {
-  font-size: 17em;
   width: 345px;
   height: 450px;
+  z-index: 999999;
+  content: '.';
 }
 
 .prev:before {
-  content: '.';
   left: 700px;
-  cursor: w-resize;
 }
 
 .next:before {
-  content: '.';
   right: 43px;
-  cursor: e-resize;
 }
 
 /* mobile view */
 
 @media only screen and (max-width: 600px) {
-  
   body {
-    max-height: 1400px;
-    position: absolute;
+    overflow:scroll;
+  }
+  .content {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-left: -6px;
   }
 
-  .next {
-    right: 4%;
+  .slider-1 {
+    margin-top: 51px;
+    width: 100%;
+    height: 36vh;
+    max-height: 32vh;
   }
 
-  .prev {
-    right: 90%;
+  .slides img {
+  height: 31%;
+  position: fixed;
+  z-index: 20;
   }
 
-  .prev,
-  .next {
-  top: 5%;
-  }
+ .content .text {
+  width: 97%;
+  margin-left: 2px;
+  margin-top: 12px;
+ }
 
-  .prev:before,
+ .content .img {
+  width: 95%;
+ }
+
+ .buttons {
+  padding-top: 31vh;
+ }
+
+ .mobile-info {
+  display: block;
+ }
+
+ .no-break {
+  display: none;
+}
+
+.prev:before,
   .next:before {
-    width: 170px;
-    height: 290px;
-    top: 2%;
+    width: 180px;
+    height: 200px;
+    top: 10%;
+    z-index: 999999;
+    content: '.';
   }
 
   .prev:before {
-    content: '.';
     left: 5px;
-    cursor: w-resize;
   }
 
   .next:before {
-    content: '.';
     right: 5px;
-    cursor: w-resize;
   }
 
-  .text {
-    /* font-family: 'AMDAL-Regular', sans-serif; */
-    width: 350;
-    position: absolute;
-    font-size: 1.2em;
-    line-height: 1.2em;
-    top: 321px;
-    padding-bottom: 20px;
-  }
-
-  .slider .photos img {
-    top: 65px;
-    opacity: 0;
-    left: 19px;
-    width: 90%;
-    position: fixed;
-    padding-bottom: 2em;
-  }
 }

@@ -2,16 +2,17 @@ const listen = document.querySelector(".listen");
 const mixes = document.querySelector(".mixes");
 
 listen.addEventListener('mouseover', ()=>{
-  mixes.style ="display:block"
+  mixes.style ="display:block";
 })
 
 mixes.addEventListener('mouseover', ()=>{
-  mixes.style ="display:block"
+  mixes.style ="display:block";
 })
 
 mixes.addEventListener('mouseout', ()=>{
-  mixes.style ="display:none"
+  mixes.style ="display:none";
 })
+
 
 if (window.innerWidth < 960) {
   listen.addEventListener('click', ()=> {
@@ -22,6 +23,15 @@ if (window.innerWidth < 960) {
     }
   })
 }
+
+image.addEventListener('mouseover', ()=>{
+  caption.style.opacity = 1;
+})
+
+image.addEventListener('mouseleave', () => {
+  caption.style.opacity = 0;
+})
+
 
 $(function() {
 
@@ -45,7 +55,7 @@ function Slider(obj) {
   var i = 0;
     var slider = this;
 
-    // The "Previous" button: to remove the class .shoved, show the previous image and add the .shoved class
+    // The "Previous" button: to remove the class .showed, show the previous image and add the .showed class
   this.prev = function () {
     slider.images.eq(i).removeClass('shown');
     i--;
@@ -57,7 +67,7 @@ function Slider(obj) {
     slider.images.eq(i).addClass('shown');
   }
 
-    // The "Next" button: to remove the class .shoved, show the next image and add the .shoved class
+    // The "Next" button: to remove the class .showed, show the next image and add the .showed class
   this.next = function () {
     slider.images.eq(i).removeClass('shown');
     i++;
