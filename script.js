@@ -13,6 +13,16 @@ mixes.addEventListener('mouseout', ()=>{
   mixes.style ="display:none"
 })
 
+if (window.innerWidth < 960) {
+  listen.addEventListener('click', ()=> {
+    if (mixes.style.display == "none") {
+      mixes.style.display = "block";
+    } else {
+      mixes.style.display = "none";
+    }
+  })
+}
+
 $(function() {
 
     new Slider({
