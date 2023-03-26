@@ -10,6 +10,7 @@ body {
   color: grey;
   margin-left: 20px;
   margin-top: 23px;
+  position: fixed;
 }
 
 ::-moz-selection {
@@ -23,12 +24,31 @@ body {
   background: rgb(255, 255, 255);
 }
 
+.listen {
+  position: fixed;
+  right: 3%;
+  text-align: right;
+  z-index: 10000;
+  color: rgb(236, 130, 91);
+  cursor: pointer;
+}
+
+.mixes{
+  position: relative;
+  display: none;
+  color: dimgray;
+}
+
+.mixes a{
+  color: mediumpurple;
+}
+
 a {
   color: gainsboro;
   text-decoration: none;
 }
 
-.tt {
+.tracks {
   color: chartreuse;
   animation: color-change 2s infinite;
   animation-duration: 7s;
@@ -196,7 +216,10 @@ a {
 } */
 
 .slider .photos img {
-  top: 133px;
+  top: 145px;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
   opacity: 0;
   left: 728px;
   max-height: 500px;
@@ -210,10 +233,27 @@ a {
   opacity: 1;
 }
 
+.next {
+  right: 3%;
+}
+
+.prev {
+  right: 48%;
+}
+
+.prev,
+.next {
+  color: dimgrey;
+  position: fixed;
+  top: 92%;
+  font-size: 1em;
+  cursor: pointer;
+}
+
 .prev:before,
 .next:before {
   color: transparent;
-  font-size: 30em;
+  font-size: 40em;
   position: fixed;
   top: 10%;
 }
@@ -243,6 +283,20 @@ a {
   
   body {
     max-height: 1400px;
+    position: absolute;
+  }
+
+  .next {
+    right: 4%;
+  }
+
+  .prev {
+    right: 90%;
+  }
+
+  .prev,
+  .next {
+  top: 5%;
   }
 
   .prev:before,
@@ -275,7 +329,7 @@ a {
   }
 
   .slider .photos img {
-    top: 26px;
+    top: 65px;
     opacity: 0;
     left: 19px;
     width: 90%;

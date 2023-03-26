@@ -1,3 +1,17 @@
+const listen = document.querySelector(".listen");
+const mixes = document.querySelector(".mixes");
+
+listen.addEventListener('mouseover', ()=>{
+  mixes.style ="display:block"
+})
+
+mixes.addEventListener('mouseover', ()=>{
+  mixes.style ="display:block"
+})
+
+mixes.addEventListener('mouseout', ()=>{
+  mixes.style ="display:none"
+})
 
 $(function() {
 
