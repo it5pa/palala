@@ -325,6 +325,7 @@ a:hover {
     top: 10%;
     z-index: 999999;
     content: '.';
+    font-size: 2em;
   }
 
   .prev:before {
