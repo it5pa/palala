@@ -24,15 +24,6 @@ if (window.innerWidth < 960) {
   })
 }
 
-image.addEventListener('mouseover', ()=>{
-  caption.style.opacity = 1;
-})
-
-image.addEventListener('mouseleave', () => {
-  caption.style.opacity = 0;
-})
-
-
 $(function() {
 
     new Slider({
