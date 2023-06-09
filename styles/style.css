@@ -10,7 +10,7 @@ body {
   color: grey;
   margin-left: 20px;
   margin-top: 15px;
-  overflow: hidden;
+  overflow: scroll;
 }
 
 /* listen */
