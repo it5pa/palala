@@ -1,0 +1,156 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 36px;
+    margin: 1rem 0;
+    background-color: greenyellow;
+  }
+
+  .audio-player {
+    display: flex;
+    gap: 1rem;
+    padding: 0 1rem;
+    color: rgb(245, 245, 245);
+  }
+
+  .header {
+    display: flex;
+    flex-flow: column-reverse wrap;
+    gap: 1rem;
+    padding: 0 1rem;
+    color: rgb(245, 245, 245);
+    /* max-height: 80vh;
+    overflow: scroll; */
+  }
+
+  .header .info {
+    margin-left: auto;
+    z-index: 999;
+  }
+
+  .info:hover {
+    cursor: pointer;
+    font-style: italic;
+  }
+
+  /* .description {
+    display: none;
+    position: fixed;
+    top: 9%;
+    left: 40%;
+    width: 38%;
+    z-index: 99;
+    animation: fadeIn 0.5s;
+  } */
+
+  .description {
+    display: none;
+    position: fixed;
+    gap: 2rem;
+    z-index: 99;
+    animation: fadeIn 0.5s;
+    background: cornflowerblue;
+    top: 6%;
+    left: 50%;
+    transform: translate(-50%);
+    width: 80%;
+    mix-blend-mode: darken;
+    border-radius: 15px;
+    padding: 1rem 2rem;
+    max-height: 80vh;
+    overflow: scroll;
+  }
+
+  .stop-button {
+    display: none;
+  }
+
+  .description p {
+    margin: 0em;
+  }
+
+  .description:hover {
+    cursor: pointer;
+    color: rgb(56 249 70);
+  }
+
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+
+  a{
+    color: rgb(245, 245, 245);
+  }
+
+  a:hover {
+    color: cadetblue;
+  }
+
+  .description2 {
+    color: rgb(245, 245, 245);
+    padding: 0 1rem;
+  }
+
+ .year {
+    color: rgb(163 221 173);
+    padding: 0rem 1rem 0 56rem;
+  }
+
+  .year:first-child {
+    padding: 0rem 0 0rem 56rem;
+  }
+
+  .audio-player .timespan {
+    margin-left: auto;
+  }
+
+  .playing {
+    color: grey;
+    /* position: sticky;
+    top: 0; */
+  }
+
+  .audio-player:hover {
+    color: grey;
+    cursor: pointer;  
+  }
+
+
+  @media screen and (max-width: 600px) {
+    body {
+      font-size: 19px;
+    }
+
+    .year {
+      padding: 1rem 0 0 11rem;
+    }
+
+    .description {
+      background: cornflowerblue;
+      flex-direction: column;
+      padding: 0.5rem 1rem;
+      top: 6%;
+      width: 87%;
+      mix-blend-mode: darken;
+      border-radius: 15px;
+    }
+
+    .header {
+      flex-flow: row;
+    }
+
+    .stop-button {
+      display: block;
+      color: cadetblue;
+    }
+
+    .stop-button:hover{
+      cursor: pointer;
+    }
+
+    .header .info {
+      display: flex;
+      gap: 1.5rem;
+    }
+  }
