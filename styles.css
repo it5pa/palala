@@ -59,7 +59,6 @@ a {
 
 .email p:hover {
     color:#DCDCDCDC;
-    cursor: pointer;
 }
 
 .email:hover .email-info{
