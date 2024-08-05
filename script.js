@@ -97,7 +97,7 @@ $(document).ready(function(){
     var mobileView = window.matchMedia("(max-width: 640px)")
 
     function mobileInfoToggle(mobileView) {
-      if (mobileView.matches) { // If media query matches
+      if (mobileView.matches) { 
         var moreInfo = document.getElementById("more-info");
         if (projects.style.display == "block") {
           moreInfo.style.display = "block";
