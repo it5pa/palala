@@ -76,29 +76,6 @@ a {
     cursor: pointer;
 }
 
-.email:hover .email-info{
-    opacity: 1;
-}
-
-/* .email-info {
-    opacity: 0;
-    position: fixed;
-    right: 15px;
-    top: 45px;
-    transition: opacity 0.3s;
-} */
-
-.email-info ul{
-    padding-inline-start: 0;
-}
-
-
-.email-info li{
-    color: #740d80;
-    text-align: right;
-    /* padding: 1px 0; */
-}
-
 #write {
     color:#7ae423;
 }
