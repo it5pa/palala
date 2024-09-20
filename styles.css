@@ -472,6 +472,23 @@ button {
     pointer-events: unset;
 }
 
+/* .energy {
+    display: block;
+    opacity: 0;
+    transition: opacity 0.7s;
+    mix-blend-mode: normal;
+    position: fixed;
+    width: 200px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.energy img {
+    width: 100%;
+    height: auto;
+} */
+
 .name-mobile {
     display: none;
 }
@@ -491,7 +508,7 @@ button {
     /* header */
 
     .voicememos {
-        bottom: 15px;
+        bottom: 20px;
     }
 
     .info-container {
@@ -532,7 +549,7 @@ button {
     .info-mobile {
         display: block;
         position: fixed;
-        bottom: 15px;
+        bottom: 20px;
         left: 9px;
         z-index: 999999;
     }
