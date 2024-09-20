@@ -34,7 +34,7 @@
   function infoToggle() {
     if (moreInfo.classList.contains("show-more-info")) {
       moreInfo.classList.toggle("show-more-info");
-      infoButton.style.color = "#DCDCDC";
+      infoButton.style.color = "#960909;";
     } else {
       moreInfo.classList.toggle("show-more-info");
       infoButton.style.color = "#7ae423";

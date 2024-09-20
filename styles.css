@@ -548,6 +548,7 @@ button {
 
     .info-mobile {
         display: block;
+        color: #960909;
         position: fixed;
         bottom: 20px;
         left: 9px;
