@@ -1,114 +1,89 @@
-$(document).ready(function(){
-    $('.project').slick({
-      dots: false,
-      respondTo: 'slider',
-      draggable: true,
-      infinite: true,
-      slidesToShow: 1,
-      speed: 150,
-      fade: true,
-      cssEase: 'linear',
-      responsive: [
-        {
-          breakpoint: 620,
-          settings: {
-          arrows: false,
-          adaptiveHeight: true
-          }
-        },
-        {
-          breakpoint: 345,
-          settings: {
-          arrows: false,
-          adaptiveHeight: true
-          }
-        }
-        ]
-    });
-  });
-
-  
 
   const worksButton = document.querySelector(".works");
+  const otherButton = document.querySelector(".other");
+  const infoButton = document.querySelector(".info");
+  const infoButtonMobile = document.querySelector(".info-mobile");
+  const closeButton = document.querySelector(".close");
 
   worksButton.addEventListener("click", worksToggle);
+  otherButton.addEventListener("click", otherToggle);
+  infoButton.addEventListener("click", infoToggle);
+  infoButtonMobile.addEventListener("click", infoToggleMobile);
+  closeButton.addEventListener("click", closeToggle);
 
-  var moreInfo = document.getElementById("more-info");
-  var projects = document.getElementById("projects");
-  var mobileView = window.matchMedia("(max-width: 640px)")
-  const infoButton = document.querySelector(".info");
 
-  if (mobileView.matches) { 
-    worksButton.innerHTML = "Works & More";
-    worksButton.style.width = "unset";
-    infoButton.style.display = "none";
-    worksButton.style.color = "#EC825B";
-  };
+  var moreInfo = document.querySelector(".more-info");
+  var projects = document.querySelector(".projects");
+  var other = document.querySelector(".other-container");
 
   function worksToggle() {
-    var projects = document.getElementById("projects");
-
-    if (projects.style.opacity == "0") {
-      projects.style.opacity = "1";
-      projects.style.display = "block"
-      projects.style.pointerEvents = "unset";
-      worksButton.style.color = "#DCDCDCDC";
+    if (projects.classList.contains("show-projects")) {
+      projects.classList.toggle("show-projects");
+      worksButton.style.color = "#DCDCDC"; 
     } else {
-      projects.style.pointerEvents = "none";
-      projects.style.display = "none"
-      projects.style.opacity = "0";
-      worksButton.style.color = "#EC825B";
+      projects.classList.toggle("show-projects");
+      worksButton.style.color = "#7ae423";
     }
 
-    var mobileView = window.matchMedia("(max-width: 640px)")
-
-    function mobileProjectsToggle(mobileView) {
-      worksButton.style.color = "#DCDCDCDC";
-      if (mobileView.matches) { // If media query matches
-        if (projects.style.display == "block") {
-          moreInfo.style.display = "none";
-          worksButton.style.color = "#EC825B";
-        } else if (projects.style.display == "none") {
-          moreInfo.style.display = "block";
-        } 
-      } 
+    if (other.classList.contains("show-other")) {
+      projects.style.zindex = "5";
     }
-  
-    mobileProjectsToggle(mobileView);
   };
 
-
-  infoButton.addEventListener("click", infoToggle);
 
   function infoToggle() {
-    var moreInfo = document.getElementById("more-info");
-    if (moreInfo.style.opacity == "1") {
-      moreInfo.style.opacity = "0";
-      moreInfo.style.display = "none"
-      moreInfo.style.pointerEvents = "none";
-      infoButton.style.color = "#EC825B";
+    if (moreInfo.classList.contains("show-more-info")) {
+      moreInfo.classList.toggle("show-more-info");
+      infoButton.style.color = "#DCDCDC";
     } else {
-      moreInfo.style.opacity = "1";
-      moreInfo.style.display = "block"
-      moreInfo.style.pointerEvents = "unset";
-      infoButton.style.color = "#DCDCDCDC";
+      moreInfo.classList.toggle("show-more-info");
+      infoButton.style.color = "#7ae423";
     }
-
-    var mobileView = window.matchMedia("(max-width: 640px)")
-
-    function mobileInfoToggle(mobileView) {
-      if (mobileView.matches) { 
-        var moreInfo = document.getElementById("more-info");
-        if (projects.style.display == "block") {
-          moreInfo.style.display = "block";
-          projects.style.display = "none";
-        } else {
-          moreInfo.style.display = "block";
-        }
-      }
-    }
-  
-    mobileInfoToggle(mobileView);
   };
 
-  
+  function infoToggleMobile() {
+    if (moreInfo.classList.contains("show-more-info")) {
+      moreInfo.classList.toggle("show-more-info");
+      infoButtonMobile.style.color = "#DCDCDC";
+      document.querySelector(".info-container").style.backgroundColor = "unset";
+      document.querySelector(".header-container").style.display = "flex";
+      document.querySelector(".voicememos").style.display = "inherit";
+    } else {
+      moreInfo.classList.toggle("show-more-info");
+      infoButtonMobile.style.color = "#7ae423";
+      document.querySelector(".info-container").style.backgroundColor = "#82816d";
+      document.querySelector(".header-container").style.display = "none";
+      document.querySelector(".voicememos").style.display = "none";
+    }
+  };
+
+  function closeToggle() {
+    if (moreInfo.classList.contains("show-more-info")) {
+      moreInfo.classList.toggle("show-more-info");
+      infoButtonMobile.style.color = "#DCDCDC";
+      document.querySelector(".info-container").style.backgroundColor = "unset";
+      document.querySelector(".header-container").style.display = "flex";
+      document.querySelector(".voicememos").style.display = "inherit";
+    } 
+  };
+
+
+
+  function otherToggle() {
+    if (other.classList.contains("show-other")) {
+      other.classList.toggle("show-other");
+      otherButton.style.color = "#DCDCDC";
+    } else {
+      other.classList.toggle("show-other");
+      otherButton.style.color = "#7ae423";
+    }
+  };
+
+
+  var mobileView = window.matchMedia("(max-width: 640px)")
+
+  // if (mobileView.matches) { 
+  //   worksButton.style.width = "unset";
+  //   infoButton.style.display = "none";
+  //   worksButton.style.color = "#7ae423";
+  // };
