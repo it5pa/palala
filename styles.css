@@ -553,7 +553,12 @@ button {
         grid-template-columns: 1fr;
     }
 
+    .col1 {
+        padding-right: 5px;
+    }
+
     .col2 {
+        padding-right: 12px;
         padding-bottom: 100px;
     }
 
