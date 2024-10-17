@@ -166,7 +166,7 @@ a {
   }
 
 .more-info p {
-    padding-inline-start: 2%;
+    padding-inline-start: 0%;
     margin-top: 0px;
     color:#DCDCDCDC;
     /* line-height: 0.9rem; */
@@ -174,7 +174,7 @@ a {
 }
 
 .more-info ul {
-    padding-inline-start: 2%;
+    padding-inline-start: 0%;
 }
 
 .more-info a{
