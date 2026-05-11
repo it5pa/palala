@@ -37,7 +37,7 @@
       infoButton.style.color = "#DCDCDC";
     } else {
       moreInfo.classList.toggle("show-more-info");
-      infoButton.style.color = "#7ae423";
+      infoButton.style.color = "#caf8b3";
     }
   };
 
@@ -50,8 +50,8 @@
       document.querySelector(".voicememos").style.display = "inherit";
     } else {
       moreInfo.classList.toggle("show-more-info");
-      infoButtonMobile.style.color = "#7ae423";
-      document.querySelector(".info-container").style.backgroundColor = "#82816d";
+      infoButtonMobile.style.color = "#caf8b3";
+      document.querySelector(".info-container").style.backgroundColor = "#45453a";
       document.querySelector(".header-container").style.display = "none";
       document.querySelector(".voicememos").style.display = "none";
     }
@@ -75,7 +75,7 @@
       otherButton.style.color = "#DCDCDC";
     } else {
       other.classList.toggle("show-other");
-      otherButton.style.color = "#7ae423";
+      otherButton.style.color = "#caf8b3";
     }
   };
 

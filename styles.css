@@ -7,11 +7,13 @@
 
 
 body {
-    font-family: "Quicksand", sans-serif;
+    font-family: "Arial", sans-serif;
     /* background-color: #fefefe; */
-    background: #82816d;
+    background: #423936;
     color: #DCDCDCDC;
     font-size: 1.2rem;
+    line-height: 1.8rem;
+    font-weight:100;
     margin: 3vh 1vw 3vh 1vw;
     overflow: scroll;
 }
@@ -61,7 +63,7 @@ a {
 
 .email a{
     /* position: relative; */
-    color: #740d80;
+    color: #7cffd9;
     /* color: #9370DB; */
 }
 
@@ -71,28 +73,28 @@ a {
     text-align: right;
 }
 
-.email p:hover {
-    color:#DCDCDCDC;
+.email a:hover {
+    color:#960909;
     cursor: pointer;
 }
 
 #write {
-    color:#7ae423;
+    color:#caf8b3;
 }
 
 .works {
-    color:#7ae423;
+    color:#caf8b3;
 }
 
 
 .info {
     color: #dcdcdc;
-    padding-top: 10px;
+    /* padding-top: 10px; */
     width: 85px;
 }
 
 .info:hover {
-    color:#7ae423;
+    color:#caf8b3;
     cursor: pointer;
 }
 
@@ -101,12 +103,12 @@ a {
 }
 
 .works:hover {
-    color:#7ae423;
+    color:#b89bc5;
     cursor: pointer;
 }
 
 .other:hover {
-    color:#7ae423;
+    color:#b89bc5;
     cursor: pointer;
 }
 
@@ -132,6 +134,7 @@ a {
     pointer-events: none;
     display: none;
     grid-template-columns: 1fr 1fr;
+    /* background-color: #423936; */
 }
 
 .voicememos {
@@ -142,7 +145,7 @@ a {
 }
 
 .voicememos a:hover {
-    color: #7ae423;
+    color: #caf8b3;
 }
 
 /* .col1 {
@@ -163,6 +166,14 @@ a {
   .more-info {
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
+    margin-top: 10px;
+  }
+
+  .more-in-depth {
+    padding-top: 20px;
+    color: #b89bc5;
+    width: 650px;
+    padding-right: 10px;
   }
 
 .more-info p {
@@ -178,7 +189,7 @@ a {
 }
 
 .more-info a{
-    color:#7ae423;
+    color:#f8d2b3;
 }
 
 h2 {
@@ -204,7 +215,7 @@ li {
 }
 
 li a:hover {
-    color:#740d80;
+    color:#a6ffd8;
 }
   
 /* projects */
@@ -240,7 +251,7 @@ button {
     margin: auto;
     width: 100%;
     margin-top: 50px;
-    margin-bottom: 130px;
+    margin-bottom: 165px;
     margin-left: auto;
     margin-right: auto;
     left: 0;
@@ -253,6 +264,7 @@ button {
 }
 
 .projects-inner {
+    padding-top: 48px;
     padding-bottom: 15px;
 }
  
@@ -268,14 +280,15 @@ button {
 
 #project-grid-1 {
     display: grid;
-    width: 800px;
+    width: 650px;
+    height: 100%;
     justify-content: center;
     justify-items: center;
     align-items: center;
 }
 
 #project-grid-2 {
-    width: 1000px;
+    width: 1200px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 45px;
@@ -284,7 +297,7 @@ button {
 }
 
 #project-grid-3 {
-    width: 1000px;
+    width: 1400px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 45px;
@@ -307,7 +320,7 @@ button {
 }
 
 .caption a{
-    color:#7ae423;
+    color:#b89bc5;
 }
 
 .caption a:hover{
@@ -319,7 +332,8 @@ button {
     width: 43vw;
     padding-top: 1px;
     padding-bottom: 3px;
-    font-size: 0.8rem;
+    font-size: 0.85rem;
+    line-height: 1.3rem;
     position: relative;
     text-align: center;
     color: #DCDCDCDC;
@@ -331,7 +345,7 @@ button {
 }
 
 .other-caption p{
-        color: #DCDCDCDC;
+        color: #ffae90;
         margin: 5px;
         padding-top: 1px;
         padding-bottom: 3px;
@@ -351,7 +365,9 @@ button {
 
 #img-width {
     margin: auto;
-    width: 550px;
+    height: 650px;
+    width: auto;
+    padding: 10px;
 }
 
 #img-width-landscape {
@@ -499,6 +515,7 @@ button {
         /* padding: 20px 8px; */
         width: 100%;
         z-index: 12;
+        line-height: 1.5rem;
     }
 
     .info {
@@ -519,13 +536,15 @@ button {
 
     .close {
         display: block;
-        color:#7ae423;
         padding-top: 10px;
+        right: 10px;
+        position: fixed;
+        color: #7cffd9;
     }
 
     .info-mobile {
         display: block;
-        color: #960909;
+        color: #dcdcdc;
         position: fixed;
         bottom: 20px;
         left: 9px;
@@ -538,7 +557,7 @@ button {
     }
 
     .more-info{
-        background-color: #82816d;
+        background-color: #423936;
         position: fixed;
         height: 100%;
         width: 98%;
@@ -562,13 +581,18 @@ button {
         padding-bottom: 100px;
     }
 
-    .more-info {
+    /* .more-info {
         background-color: #82816d;
-    }
+    } */
 
     .more-info p{
         width: unset;
         padding-inline-start: 0;
+    }
+
+    .more-in-depth {
+        width: unset;
+        padding-right: 0;
     }
 
     .more-info ul {
@@ -589,7 +613,7 @@ button {
     .caption p {
         width: 95vw;
         font-size: 10.5px;
-        line-height: auto;
+        line-height: 1rem;
         margin: auto;
         text-align: center;
         padding-bottom: 0px;
@@ -650,6 +674,6 @@ button {
 
     #img-width, #img-width-landscape {
         width: 95vw;
-
+        height: unset;
     }
 }
