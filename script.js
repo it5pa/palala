@@ -22,7 +22,7 @@
       worksButton.style.color = "#DCDCDC"; 
     } else {
       projects.classList.toggle("show-projects");
-      worksButton.style.color = "#7ae423";
+      worksButton.style.color = "#caf8b3";
     }
 
     if (other.classList.contains("show-other")) {
